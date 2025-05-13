@@ -61,11 +61,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "nif='" + nif + '\'' +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", zipCode=" + zipCode +
-                '}';
+        return String.format(
+                "Student {nif='%s', name='%s', surname='%s', zipCode=%d}",
+                nif, name, surname, zipCode
+        );
     }
 }

@@ -14,13 +14,13 @@ public class ConfigPool {
             config.setJdbcUrl("jdbc:mysql://localhost:3306/highschool");
             config.setUsername("root");
             config.setPassword("Sandia4you");
-            
+
             config.setMaximumPoolSize(5);
             config.setMinimumIdle(5);
             config.setIdleTimeout(30000);
             config.setMaxLifetime(1800000);
             config.setConnectionTimeout(30000);
-            
+
             dataSource = new HikariDataSource(config);
         }
         return dataSource;
